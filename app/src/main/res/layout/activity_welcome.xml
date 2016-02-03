@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#FFD455"
+    tools:context="com.example.muvr.MainActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/muvr_welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to MUVR"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_alignRight="@+id/muvr_book"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/muvr_book"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="book-a-tempo"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="-150dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="15dp"
+        />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/muvr_selectCity"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:text="Choose a City"
+        android:paddingTop="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/muvr_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Address"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:scaleType="centerInside"
+        android:id="@+id/back"
+        android:layout_alignTop="@+id/muvr_selectCity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginRight="-16dp"/>
+
+
+
+
+
+</RelativeLayout>

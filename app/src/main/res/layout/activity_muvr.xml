@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd455"
+    android:paddingRight="16dp"
+    tools:context="com.example.muvr.MuvrActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/muvr"
+        android:layout_alignParentTop="true" />
+    <ImageView
+        android:id="@+id/img_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/imageView1"
+        android:src="@drawable/aa_1"
+        android:paddingLeft="-30dp"/>
+
+</RelativeLayout>

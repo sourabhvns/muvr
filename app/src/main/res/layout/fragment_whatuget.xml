@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#343a2f"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textColor="#FFd455"
+        android:text="What You Get?"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/txtLabel"
+        android:gravity="center"
+        android:background="#FFFFFF">
+        <ImageView android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/txtLabel"
+            android:src="@drawable/trusted_drivers"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trusted Driver"
+            android:textColor="#343a2f"/>
+        <ImageView android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/txtLabel"
+            android:src="@drawable/professional"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Professional Approach"/>
+
+        <ImageView android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/txtLabel"
+            android:src="@drawable/affordable_price"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Affordable Price"/>
+
+        <ImageView android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/txtLabel"
+            android:src="@drawable/fast_service"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fast Service"/>
+    </LinearLayout>
+
+</ScrollView>
+
+
+</LinearLayout>
